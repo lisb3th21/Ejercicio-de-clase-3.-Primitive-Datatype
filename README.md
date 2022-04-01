@@ -126,3 +126,61 @@ Obteniendo lo siguiente:
 
 **Dar formato a los datos devueltos por un cmdlet en una lista**
 
+El cmdlet `Get-Service` obtiene objetos que representan los servicios en una computadora, incluidos los servicios en ejecución y detenidos. Esto los recoge `Format-List` y los muestra en forma de lista.
+
+```powershell
+Get-Service | Format-List
+```
+
+![Ejercicio 7](imagenes/ej7.jpeg)
+
+---
+
+## Tarea 8
+
+**Capture la salida de ´Get-Command´ en ´Out-GridView´.**
+
+```powershell
+Get-Command | Out-GridView
+```
+
+Realizando este comando nos saldrá la ventana siguiente:
+
+![Ejercicio 7](imagenes/ej8.png)
+
+---
+
+## Tarea 9
+
+**Pipe the 5 cmdlets you discovered in task 1 into `Out-GridView`.**
+
+He ejecutado los siguientes comandos:
+
+```powershell
+Get-Help | Out-GridView
+New-Item | Out-GridView
+Get-Alias | Out-GridView
+Get-AuthenticodeSignature | Out-GridView
+Get-ControlPanelItem | Out-GridView
+```
+
+Donde del primer comando `Get-Help | Out-GridView` he obtenido lo siguiente:
+
+![Ejercicio 9.1](imagenes/ej91.png)
+
+Y del comando `Get-ControlPanelItem | Out-GridView` he obtenido lo siguiente:
+
+![Ejercicio 9.2](imagenes/ej92.png)
+
+---
+
+## Tarea 10
+
+**Busca la documentacion oficial de PowerShell en Microsoft.**
+
+
+La he encontrado en esta direccion web:
+
+https://docs.microsoft.com/es-es/powershell/
+
+![Ejercicio 10](imagenes/ej10.png)
