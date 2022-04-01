@@ -90,8 +90,39 @@ Get-Content -Path ./Maximo/Powershell/Workshop1/lisbeth/testfile.txt
 
 **Lea del archivo de texto y usa `Get-Member` para encontrar el tipo de datos devuelto**
 
-Utilizamos 
+Hacemos un `Get-Content` del archivo creado con anterioridad para mostrar las propiedades y métodos de los objetos de servicio generados por el cmdlet de `Get-Content`. Con la barra `|` recogemos la salida del anterior comando y la toma `Get-Content`. 
 
 ```powershell
 Get-Content -Path ./Maximo/Powershell/Workshop1/lisbeth/testfile.txt | Get-Member 
 ```
+
+![Ejercicio 5](imagenes/ej5.png)
+
+---
+
+## Tarea 6
+
+**Sobrescriba todos los datos dentro del archivo de texto que creó en la tarea 3.**
+
+Para sobreescribir el archivo utilizamos lo siguiente:
+
+```powershell
+Set-Content -Path ./Maximo/Powershell/Workshop1/lisbeth/testfile.txt -Value "Boooooo"
+```
+
+Y luego visualizamos el contenido del archivo:
+
+```powershell
+Get-Content -Path ./Maximo/Powershell/Workshop1/lisbeth/testfile.txt 
+```
+
+Obteniendo lo siguiente:
+
+![Ejercicio 6](imagenes/ej6.png)
+
+---
+
+## Tarea 7
+
+**Dar formato a los datos devueltos por un cmdlet en una lista**
+
